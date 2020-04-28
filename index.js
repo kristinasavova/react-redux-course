@@ -10,7 +10,9 @@ import Scoreboard from './src/containers/Scoreboard';
 // Store holds the entire application state, it's a composition of all reducers  
 // It's a primary source of info for the Scoreboard container
 const store = createStore (
-    PlayerReducer
+    PlayerReducer,
+    // Let use Redux DevTools  
+    window.devToolsExtension && window.devToolsExtension ()
 );   
 
 render (

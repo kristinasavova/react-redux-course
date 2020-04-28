@@ -26,4 +26,12 @@ export const updatePlayerScore = (index, score) => {
     };
 };
 
+// Action creator that takes index as arguments and returns an action 
+export const selectPlayer = index => {
+    return {
+        type: PlayerActionTypes.SELECT_PLAYER,
+        index
+    };
+};
+
 //These actions need to be dispatched in order to express an intent to change the state   
